@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div class="header_nav">
+        <div class="headerBar">
             <!-- <a href="./index.html"><div class="nav nav1"><div class="img"><img style="display:none; width: 100px;height: 100px;" src="./images/Brighthouse only_logo.svg"></div></div></a>
             <a href="./index.html"><div class="nav nav2"><div class="img"><img style="display:none; width: 100px;height: 100px;" src="./images/Brighthouse text_CMYK.svg"></div></div></a> -->
             <div class="nav"></div>
@@ -16,7 +16,7 @@
             <!-- <div class="nav"></div> -->
             <!-- <div class="nav"></div> -->
         </div>
-        <div class="main_nav20">
+        <div class="headerBarMin">
             <div class="header_nav20">
                 <a href="./teacher.html"><div class="nav20">師資介紹</div></a>
                 <a href="./class.html"><div class="nav20">課程一覽</div></a>
@@ -44,28 +44,31 @@ export default ({
 </script>
 <style scoped>
 @media (min-width: 768px){
-    .main_nav20{
+    .headerBar{
         display: flex;
         justify-content: end;
         flex-direction: row;
         width: 100%;
         background-color: yellow;
         height: 60px;
+        align-items: center;
     }
-    .main_nav20{
+    .headerBarMin{
         display: none;
     }
-}
-@media (max-width: 7686px){
-    .header_nav{
-        display: flex;
-        justify-content: end;
-        flex-direction: row;
-        width: 100%;
-        background-color: yellow;
-        height: 60px;
-    }
     .nav{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        width: 120px;
+        text-align: center;
+    }
+}
+@media (max-width: 768px){
+    .headerBar{
+        display: none;
+    }
+    .headerBarMin{
         width: 120px;
         height: 60px;
         display: flex;

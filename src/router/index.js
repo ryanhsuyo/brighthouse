@@ -8,6 +8,7 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {path: '/', name: 'Home', component: Home}
+    // {path: '/teacher', name: 'Teacher', component: Teacher}
     // {path: '/topHeader', name: 'topHeader', component: topHeader}
   ]
 })
