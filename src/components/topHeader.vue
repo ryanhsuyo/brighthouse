@@ -6,12 +6,12 @@
             <div class="nav"></div>
             <div class="nav"></div>
             <div class="nav"></div>
-            <a href="./teacher.html"><div class="nav">師資介紹</div></a>
-            <a href="./class.html"><div class="nav">課程一覽</div></a>
-            <a href="./blog.html"><div class="nav">B L O G</div></a>
-            <a href="./dateclass.html"><div class="nav">預約課程</div></a>
-            <a href="./rentplace.html"><div class="nav">空間租借</div></a>
-            <a href="./stone.html"><div class="nav">線上商店</div></a>
+            <router-link to="teacher"><div class="nav">師資介紹</div></router-link>
+            <router-link to="className"><div class="nav">課程一覽</div></router-link>
+            <router-link to="blog"><div class="nav">B L O G</div></router-link> 
+            <router-link to="dateClass"><div class="nav">預約課程</div></router-link>
+            <router-link to="rentPlace"><div class="nav">空間租借</div></router-link>
+            <router-link to="store"><div class="nav">線上商店</div></router-link>
             <div class="nav"></div>
             <!-- <div class="nav"></div> -->
             <!-- <div class="nav"></div> -->
@@ -39,7 +39,7 @@
 
 <script>
 export default ({
-  name: 'topHeader'
+    name: 'topHeader'
 })
 </script>
 <style scoped>
